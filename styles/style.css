@@ -95,6 +95,15 @@ main {
   width: 100%;
   margin-top: 44px;
 }
+/* I Could have used "background-image:url();" property to add 
+background image to divs where background image is needed but don't know why
+ using this property the browser was not detecting any images 😔 
+ so i have to use image tag in html and made it cover the all div's background.
+ if background property is working on your pc then i will recommend you using that as
+ it will save your time instead of writing verbose codes 🥲 unlike me.
+                                                        
+                                                          -author Aniket Kumar
+*/
 
 .student-section {
   width: 100%;
