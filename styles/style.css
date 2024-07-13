@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+html,
+body {
+  min-width: 1304px;
+  overflow-x: auto;
+}
+/* Header Part */
+header {
+  display: flex;
+  width: 100%;
+  height: 6%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding-left: 284px;
+  padding-right: 280px;
+  min-width: 1304px;
+  z-index: 1000;
+}
+
+header img {
+  height: 24px;
+}
+
+.apple_logo {
+  margin-right: 20px;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  width: 46em;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #101010;
+  font-weight: 500;
+  padding-right: 24px;
+}
+
+.bag {
+  height: 48px;
+  margin-left: 28px;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 0;
+  }
+  header a {
+    display: none;
+  }
+  .bag {
+    margin-right: 62px;
+  }
+  .apple_logo {
+    margin-right: 315px;
+  }
+}
+
+/* Main Part */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 44px;
+}
+
+.student-section {
+  width: 100%;
+  height: 602px;
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-section a img {
+  height: 464px;
+}
+
+#shop-button {
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  line-height: 20px;
+  color: #0077ed;
+  border: 2px solid #0077ed;
+  height: 48px;
+  width: 88px;
+  padding: 11px 21px;
+  border-radius: 28px;
+  font-size: 17px;
+  font-weight: 450;
+  transition: 0.2s ease-in-out;
+}
+
+#shop-button:hover {
+  background-color: #0077ed;
+  color: #fefeff;
+}
+
+.ustudent-section {
+  width: 100%;
+  height: 602px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#text-overlap {
+  padding-top: 2px;
+  line-height: 58px;
+  font-size: 26px;
+  top: 1012px;
+  position: absolute;
+  z-index: 800;
+  text-align: center;
+  color: #f5f5f7;
+  min-width: 900px;
+}
+#learn-more-button {
+  position: absolute;
+  z-index: 800;
+  top: 1146px;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  line-height: 20px;
+  background-color: #0077ed;
+  color: #fefeff;
+  border: 2px solid #0077ed;
+  height: 46px;
+  width: 144px;
+  padding: 11px 21px;
+  border-radius: 48px;
+  font-size: 17px;
+  font-weight: 450;
+  transition: 0.2s ease-in-out;
+}
+#learn-more-button:hover {
+  background-color: #0071e3;
+}
+.ai-section {
+  width: 100%;
+  height: 602px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#text-overlap2 {
+  padding-top: 2px;
+  line-height: 58px;
+  font-size: 26px;
+  top: 1296px;
+  position: absolute;
+  z-index: 800;
+  text-align: center;
+  color: #1d1d1f;
+  min-width: 900px;
+}
+#time-date {
+  position: absolute;
+  z-index: 800;
+  color: #6e6e73;
+  font-size: 18px;
+  left: 272px;
+  top: 94px;
+}
+/* Author Aniket Kumar */
+.button-container {
+  display: flex;
+  position: absolute;
+  top: 1434px;
+  margin-top: 20px;
+  width: 320px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.button-container a {
+  z-index: 800;
+
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  line-height: 20px;
+  background-color: #0077ed;
+  color: #fefeff;
+  border: 2px solid #0077ed;
+  height: 46px;
+  width: 144px;
+  padding: 11px;
+  border-radius: 48px;
+  font-size: 17px;
+  font-weight: 450;
+  transition: 0.2s ease-in-out;
+}
+.button-container a:hover {
+  background-color: #0071e3;
+}
+#watch-title {
+  color: #0077ed;
+  border: 2px solid #0077ed;
+  background-color: #F5F5F7;
+}
+#watch-title:hover {
+  background-color: #0077ed;
+  color: #fefeff;
+}
+.product-container{
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  align-items:center;
+  align-content:center;
+  margin-top:18px;
+}
+.product-1{
+  display:flex;
+  flex-direction:column;
+  width:49.5%;
+  align-items:center;
+  justify-content:center;
+  align-content:center;
+  overflow:hidden;
+}
+.product-1 img{
+  height:100%;
+}
+.product-1-text-container{
+  position:absolute;
+  top:1900px;
+  z-index:800;
+  text-align:center;
+  min-width:554px;
+}
+
+/* Author Aniket Kumar */
+.large-text{
+  font-size:40px;
+  font-weight:600;
+}
+.small-text{
+  padding-top:8px;
+  font-size:20px;
+  line-height:22px;
+}
+.product-1-button-container{
+  display: flex;
+  position: absolute;
+  top: 2000px;
+  /* left:258px; */
+  width: 220px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+}
+.learn-more-button{
+  text-decoration:none;
+  text-align:center;
+  width:120px;
+  height:36px;
+  padding: 6px;
+  border-radius: 48px;
+  font-size: 17px;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+  background-color: #0077ed;
+  color: #fefeff;
+  border: 2px solid #0077ed;
+}
+.learn-more-button:hover{
+  background-color: #016dd9;
+  color: #fefeff;
+}
+.buy-button{
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  line-height: 20px;
+  color: #0077ed;
+  border: 1px solid #0077ed;
+  height: 35px;
+  width: 82px;
+  padding: 6px;
+  border-radius: 28px;
+  font-size: 17px;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+}
+.buy-button:hover{
+  background-color: #0077ed;
+  color: #fefeff;
+}
+#product-2-learn-more-button{
+  background-color: #272729;
+  color:#FFFFFF;
+  border:2px solid #272729;
+}
+#product-2-learn-more-button:hover{
+  background-color: #19191b;
+ 
+}
+#product-2-buy-button{
+  border:2px solid #272729;
+  color:#272729;
+}
+#product-2-buy-button:hover{
+  background-color:#272729;
+  color:#FFFFFF;
+}
+#product-3-text-container{
+  top:2500px;
+  color:#F5F5F7;
+}
+#product-4-text-container{
+  top:2500px;
+}
+#product-3-button-container{
+  top:2600px;
+}
+#product-4-button-container{
+  top:2600px;
+}
+#product-5-text-container{
+  top:3100px;
+  color:#F5F5F7;
+}
+#product-5-button-container{
+  top:3204px;
+}
+#product-6-text-container{
+  top:3100px;
+
+}
+#product-6-button-container{
+  top:3204px;
+  justify-content:center;
+}
+#product-6-button{
+  width:180px;
+}
+/* Footer part */
+.apple-footer {
+  background-color: #F5F5F7;
+  color: #333;
+  margin-top:18px;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 200px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 20px;
+  text-align: center;
+}
+.footer-bottom a {
+  color:#0066CC;
+}
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-legal a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+/* It ends here 😁 */
+/* author Aniket Kumar */
